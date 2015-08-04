@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js --single-run"
+    "test-single-run": "karma start karma.conf.js --single-run",
+    "postinstall": "bower install"
   },
   "author": "Manoj Nama",
   "license": "ISC",
