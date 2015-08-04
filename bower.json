@@ -1,0 +1,22 @@
+{
+  "name": "TradingApp",
+  "version": "0.0.0",
+  "authors": [
+    "Manoj Nama <manoj.nama@outlook.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "angular-mocks": "~1.4.3",
+    "jquery": "~2.1.4"
+  }
+}
