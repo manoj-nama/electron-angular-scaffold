@@ -16,7 +16,7 @@ app.on('ready', function() {
   	"auto-hide-menu-bar": true
   });
 
-  console.log("\n\nCurrent environment:", process.env.CV_ENV || "development", "\n\n");
+  console.log("\n\nCurrent environment:", process.env.CV_ENV || "production", "\n\n");
   if(process.env.CV_ENV === "development") {
     mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
   } else {
