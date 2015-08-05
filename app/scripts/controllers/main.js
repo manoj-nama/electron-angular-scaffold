@@ -8,10 +8,4 @@
  * Controller of the cvGuiApp
  */
 angular.module('cvGuiApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl',[function() {}]);
