@@ -16,7 +16,7 @@ app.on('ready', function() {
   	"auto-hide-menu-bar": true
   });
 
-  mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
+  mainWindow.loadUrl('file://' + __dirname + '/dist/index.html');
 
   mainWindow.on('closed', function() {
     mainWindow = null;
