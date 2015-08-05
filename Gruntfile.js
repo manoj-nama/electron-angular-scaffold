@@ -381,6 +381,13 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      jquery: {
+        expand: true,
+        flatten: true,
+        cwd: '<%= yeoman.app %>',
+        dest: '<%= yeoman.dist %>/scripts',
+        src: 'bower_components/jquery/dist/jquery.min.js'
       }
     },
 
@@ -453,6 +460,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
+    'copy:jquery',
     'htmlmin'
   ]);
 
