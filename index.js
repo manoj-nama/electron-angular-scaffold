@@ -16,7 +16,11 @@ app.on('ready', function() {
   	"auto-hide-menu-bar": true
   });
 
-  mainWindow.loadUrl('file://' + __dirname + '/dist/index.html');
+  if(process.env.CV_ENV === "development") {
+    mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
+  } else {
+      mainWindow.loadUrl('file://' + __dirname + '/dist/index.html');
+  }
 
   mainWindow.on('closed', function() {
     mainWindow = null;

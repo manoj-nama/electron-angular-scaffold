@@ -66,7 +66,11 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
 
-       window.$ = window.jQuery = require("./scripts/jquery.min.js");
+       if(process.env.CV_ENV === "development") {
+           window.$ = window.jQuery = require("./bower_components/jquery/dist/jquery.min.js");
+       } else {
+           window.$ = window.jQuery = require("./scripts/jquery.min.js");
+       }
     </script>
 
     <!-- build:js({.tmp,app}) scripts/vendor.js -->
